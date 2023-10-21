@@ -1,1 +1,1 @@
-# privacy_policy_admob
+# Somewhere app privacy policy

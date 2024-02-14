@@ -5,19 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style media="screen">
     body{
-      padding-left: 20px;
-      padding-right: 20px;
       background-color: rgb(255, 255, 255);
       color: rgb(0, 0, 0);
     }
   </style>
+  <script>
+    window.onload = function() {
+      var isMobile = window.innerWidth <= 800;
 
-  <title>Somewhere - 개인정보 처리방침</title>
+      var bodyElement = document.querySelector('body');
+      if (isMobile) {
+        bodyElement.style.padding = '10px';
+      } else {
+        bodyElement.style.padding = '50px';
+      }
+    }
+  </script>
+
+  <title>Somewhere 개인정보 처리방침</title>
 
   <link rel="icon" href="np_logo_icon.png">
 
   <style type="text/css">
-    a { color: rgb(0, 6, 194); text-decoration: underline;}	
+    a { color: rgb(0, 6, 194); text-decoration: underline; word-break: break-all;}	
   </style>
 
 </head>
